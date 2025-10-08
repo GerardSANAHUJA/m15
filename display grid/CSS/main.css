@@ -1,47 +1,21 @@
-/* Todos los elementos de la pagina */
-*{
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+#container{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
 }
 
- h1{
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: weight;
-  font-style: normal;
+.titulo{
+    grid-column: 1;
+   
 }
 
-/* Todos los parrafos de la pagina */
-p{
-   color: blue;
- }
-
-/* Todos los párrafos contenidos en "primero" */
-#primero p{
-  color: red;
+.foto{
+   grid-column: 2;
+   display: flex;
+   justify-content: right;
+   align-items: right;
+   
 }
 
-/* Todos los enlaces la pagina */
-a{
-  color: black;
-}
-
-/* Todos los enlaces la pagina */
-a:hover{
-  color: greenyellow;
-}
-
-/* Los elementos "em" contenidos en "primero" */
-#primero em{
-  background-color: #FFFFCC;
-}
-
-/* Todos los elementos "em" de clase "especial" en toda la pagina */
-em.especial{
-  background-color: #FFCC99;
-}
-
-/* Elementos "span" contenidos en la clase normal */
-span.normal{
-  font-weight: bold;
-}
