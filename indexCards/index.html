@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Contenidor principal--> 
+    <div class="container my-4">
+            <!-- Secció principal amb Cards -->
+    <main class="my-5">
+        <!-- ’etiqueta <main> indica el contingut principal de la pàgina.
+
+    La classe my-5 és una utilitat de Bootstrap:
+
+    m → “margin” (marge)
+
+    y → “eix vertical” (a dalt i a baix)
+
+    5 → un valor de separació gran
+    ➡️ Afegeix espai superior i inferior al bloc principal. -->
+
+
+      <div class="row g-4">
+        <!-- Crea una fila (row) dins del sistema de graella (grid) de Bootstrap.
+
+        g-4 → defineix un espai (“gap”) entre les columnes i files (una separació visual entre targetes).
+        ➡️ Aquesta fila contindrà diverses columnes amb targetes dins.-->
+
+        <!-- Card 1 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <!-- efineix una columna responsive (que canvia segons la mida de pantalla):
+
+            col-sm-12 → a pantalles petites ocupa tot l’ample (una targeta per fila).
+
+            col-md-6 → a pantalles mitjanes ocupa la meitat (dues targetes per fila).
+
+            col-lg-4 → a pantalles grans ocupa una tercera part (tres targetes per fila).
+            ➡️ Això fa que el disseny sigui adaptatiu (responsive).--> 
+
+
+          <div class="card shadow-sm h-100">
+            <!-- card → és una classe Bootstrap que crea una targeta estilitzada.
+
+            shadow-sm → afegeix una ombra suau al voltant de la targeta.
+
+            h-100 → fa que la targeta tingui alçada completa dins la seva columna (perquè totes quedin igualades). -->
+
+            <img src="https://picsum.photos/400/250?random=10" class="card-img-top" alt="Imatge 1">
+            <!-- Mostra una imatge a la part superior de la targeta.
+
+            card-img-top → ajusta l’estil i mida de la imatge dins la targeta.
+
+            src → indica la URL de la imatge (aquí és una imatge aleatòria de picsum.photos
+            ).
+
+            alt → text alternatiu per accessibilitat.--> 
+
+            <div class="card-body text-center">
+                <!-- card-body → conté el text i botons principals de la targeta.
+
+                text-center → centra tot el contingut dins la targeta.--> 
+              <h5 class="card-title">Projecte 1</h5>
+              <p class="card-text">Una breu descripció del primer projecte. Bootstrap facilita dissenys nets i adaptatius.</p>
+              <a href="#" class="btn btn-primary">Més informació</a>
+                <!-- <h5 class="card-title"> → títol del projecte.
+
+                <p class="card-text"> → breu descripció del projecte.
+
+                <a class="btn btn-primary"> → botó Bootstrap estilitzat en blau que enllaça (de moment a #).--> 
+            </div>
+          </div>
+        </div>
+
+        <!-- El mateix esquema es repeteix per la Card 2 (i es podria repetir per més projectes).
+        ➡️ Així s’aconsegueix una quadrícula de targetes responsives, que canvia segons la mida de la pantalla.-->
+
+        <!-- Card 2 -->
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class="card shadow-sm h-100">
+            <img src="https://picsum.photos/400/250?random=8" class="card-img-top" alt="Imatge 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Projecte 2</h5>
+              <p class="card-text">Una breu descripció del segon projecte. Bootstrap facilita dissenys nets i adaptatius.</p>
+              <a href="#" class="btn btn-primary">Més informació</a>
+            </div>
+          </div>
+        </div>
+
+
+    </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
